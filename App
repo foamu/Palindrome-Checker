@@ -1,0 +1,25 @@
+package palindromes;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		Words wordsList = new Words();
+		int palindromeCount = 0;
+
+		for (String word : wordsList.getWords()) {
+
+			StringBuilder strings = new StringBuilder(word);
+			strings.reverse();
+
+			if (word.equalsIgnoreCase(strings.toString())) {
+				palindromeCount++;
+			}
+
+		}
+
+		System.out.println("Palindromes are words that are spelled the same when reversed. Example: Anna");
+		System.out.println("Number of palindromes in the String Array: " + palindromeCount + "/" + wordsList.getArraySize() + " words.");
+	}
+
+}
