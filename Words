@@ -1,0 +1,37 @@
+package palindromes;
+
+public class Words {
+	
+	private String[] words = new String[] {
+			"Noon",
+			"Four",
+			"Eight",
+			"Car",
+			"Racecar",
+			"Rotor",
+			"Wow",
+			"Monroe",
+			"Statistics",
+			"Stats",
+			"Cool",
+			"Radar",
+			"Level",
+			"One",
+			"lol",
+			"Optimus",
+			"Phobos"
+	};
+
+	public String[] getWords() {
+		return words;
+	}
+
+	public void setWords(String[] words) {
+		this.words = words;
+	}
+	
+	public int getArraySize() {
+		return words.length;
+	}
+
+}
